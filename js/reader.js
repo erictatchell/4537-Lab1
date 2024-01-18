@@ -25,8 +25,8 @@ function draw() {
         let card_el = document.createElement(elements.DIV);
         card_el.classList.add(`${elements.CARD}-read`);
 
-        let textarea = document.createElement('textarea');
-        textarea.value = card.text;
+        let textarea = document.createElement('p');
+        textarea.innerHTML = card.text;
         textarea.id = `textarea-${card.id}`; // appending card id to each textarea was chatgpts idea
         card_el.appendChild(textarea);
 
